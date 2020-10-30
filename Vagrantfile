@@ -2,8 +2,8 @@
 # vi: set ft=ruby :
 
 Vagrant.configure("2") do |config|
-  config.vm.box = "1b0325h/Leatty"
-  config.disksize.size = "50GB"
+  config.vm.box = "Leatty1031.box"
+  config.disksize.size = "100GB"
   config.vm.network "forwarded_port", guest: 80, host:9090
   config.vm.network "private_network", ip: "212.102.50.120"
   config.vm.synced_folder "./data", "/vagrant_data"
